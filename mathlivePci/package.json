@@ -1,0 +1,31 @@
+{
+  "name": "mathlive-pci",
+  "description": "Mathlive equation editor",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "private": true,
+  "dependencies": {
+    "preact": "^10.13.2",
+    "@citolab/preact-store": "latest"
+  },
+  "devDependencies": {
+    "@citolab/tspci": "latest",
+    "postcss-import": "^15.1.0",
+    "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
+    "tailwindcss": "^3.3.2",
+    "autoprefixer": "10.4.14"
+  },
+  "scripts": {
+    "dev": "tspci --dev",
+    "prod": "tspci",
+    "tspci": "tspci"
+  },
+  "config": {
+    "tspci": {
+      "typeIdentifier": "mathlivePci"
+    }
+  },
+  "source": "src/index.tsx",
+  "author": "abuenameh"
+}
